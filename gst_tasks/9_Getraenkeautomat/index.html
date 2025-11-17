@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vending Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Vending Machine</h1>
+
+        <div id="machine">
+
+            <!-- Panel -->
+            <div id="panel">
+                <div class="display">
+                    <p>Credit: <span id="credit">0.00</span> €</p>
+                </div>
+    
+                <div class="buttons">
+                    <button class="money-btn" onclick="insertMoney(0.50)">0,50 €</button>
+                    <button class="money-btn" onclick="insertMoney(1)">1,00 €</button>
+                    <button class="money-btn" onclick="insertMoney(2)">2,00 €</button>
+                    <button class="return-btn" onclick="returnMoney()">Return</button>
+                </div>
+                
+                <div class="drink">
+                    <h3>Drinks</h3>
+                    <button class="drink-btn" onclick="selectDrink('Cola')">Cola (2 €)</button>
+                    <button class="drink-btn" onclick="selectDrink('Fanta')">Fanta (2 €)</button>
+                    <button class="drink-btn" onclick="selectDrink('Sprite')">Sprite (2 €)</button>
+                    <button class="drink-btn" onclick="selectDrink('Mineral')">Mineral (1,50 €)</button>
+                </div>
+                
+                <div id="output">
+                    <p id="outputDisplay">Choose your Drink</p>
+                </div>
+            </div>
+            
+    
+            <!-- Grid + labels wrapper -->
+            <div id="grid-container">
+                <div id="grid-and-labels">
+                    <div id="grid"></div>
+                    <div id="drink-labels">
+                        <div>Cola</div>
+                        <div>Fanta</div>
+                        <div>Sprite</div>
+                        <div>Mineral</div>
+                    </div>
+                </div>
+            </div>
+                                            
+        </div>
+    
+    </div>
+
+
+    <script src="functions.js"></script>
+</body>
+</html>

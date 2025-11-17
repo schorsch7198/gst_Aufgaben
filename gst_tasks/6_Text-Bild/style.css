@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 40px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  /* Allgemeine Formatierung für Bilder */
+  img {
+    width: 200px;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  
+  /* Erstes Bild: links oben */
+  .oben-links {
+    float: left;
+    margin-right: 20px;
+  }
+  
+  /* Zweites Bild: mitte rechts */
+  .mitte-rechts {
+    float: right;
+    margin-left: 20px;
+  }
+
+  /* Mittiges Bild */
+.zentriert {
+    display: block;
+    margin: 20px auto; /* Zentriert horizontal */
+    width: 300px;
+    border-radius: 8px;
+  }
+  .mitte {
+    text-align: center;
+    margin: 40px 0;
+    clear: both;
+  }
+  
+  
+  /* Drittes Bild: links unten */
+  .unten-links {
+    float: left;
+    margin-right: 20px;
+  }
+  
+  /* Abschnittsabstand */
+  section {
+    margin-bottom: 50px;
+    clear: both; /* trennt die Bereiche voneinander */
+  }
+  

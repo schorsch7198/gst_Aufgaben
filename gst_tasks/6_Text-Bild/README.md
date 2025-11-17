@@ -1,0 +1,1 @@
+Diese Aufgabe habe ich ausgelassen aus Zeitgründen.
