@@ -1,16 +1,17 @@
 /*
-	Book Management System - PostgreSQL Version for pgAdmin
-
-	"I am using pgAdmin in private."
+	Book Management System - PostgreSQL Version (e.g. for pgAdmin)
 */
 
 -- DATABASE: BOOK_MANAGEMENT
 DROP DATABASE IF EXISTS book_management WITH (FORCE);
 CREATE DATABASE book_management;
 
--- SCHEMA: LIBRARY (Note: PostgreSQL use schemas unlike MySQL)
-DROP SCHEMA IF EXISTS library CASCADE;
-CREATE SCHEMA library;
+-- -- SCHEMA: LIBRARY (Note: comment out for MySQL)
+-- DROP SCHEMA IF EXISTS library CASCADE;
+-- CREATE SCHEMA library;
+
+-- -- USE DATABASE (Note:Comment out for MySQL)
+-- USE book_management;
 
 
 -- TABLE: BOOK
