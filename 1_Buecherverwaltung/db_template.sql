@@ -6,7 +6,7 @@
 DROP DATABASE IF EXISTS book_management WITH (FORCE);
 CREATE DATABASE book_management;
 
--- -- SCHEMA: LIBRARY (Note: comment out for MySQL)
+-- -- SCHEMA: LIBRARY (Note: comment out for PostgreSQL)
 -- DROP SCHEMA IF EXISTS library CASCADE;
 -- CREATE SCHEMA library;
 
