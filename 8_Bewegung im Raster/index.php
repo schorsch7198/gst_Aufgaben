@@ -1,14 +1,6 @@
-<?php
-include 'functions.php';
+<?php include 'functions.php'; ?>
+<?php $gridState = runGridApp(); ?>
 
-// Initialize grid state
-$gridState = initializeGrid();
-
-// Process form actions
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $gridState = processGridAction($gridState);
-}
-?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
