@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Exercise 3 - Forms</title>
+</head>
+<body>
+    <h1>User Registration Form</h1>
+    
+    <form action="/submit" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <!-- Text Input -->
+            <p>
+                <label for="firstname">First Name:</label><br>
+                <input  type="text" 
+                        id="firstname" 
+                        name="firstname" 
+                        placeholder="Max"
+                        size="30"
+                        required maxlength="50">
+            </p>
+            
+            <!-- Text Input -->
+            <p>
+                <label for="lastname">Last Name:</label><br>
+                <input  type="text" 
+                        id="lastname" 
+                        name="lastname" 
+                        placeholder="Mustermann"
+                        size="30"
+                        required maxlength="70">
+            </p>
+            
+            <!-- Email Input -->
+            <p>
+                <label for="email">Email Address:</label><br>
+                <input  type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="max.mustermann@gmail.com"
+                        size="30"
+                        required>
+            </p>
+            
+            <!-- Password Input -->
+            <p>
+                <label for="password">Password:</label><br>
+                <input  type="password" 
+                        id="password" 
+                        name="password" 
+                        size="30"
+                        required minlength="10">
+            </p>
+            
+            <!-- Telephone Input -->
+            <p>
+                <label for="phone">Phone Number:</label><br>
+                <input  type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        pattern="\+[0-9]{2} [0-9]{3} [0-9]{8}" 
+                        placeholder="+12 123 12345678"
+                        size="20">
+            </p>
+            
+            <!-- URL Input -->
+            <p>
+                <label for="website">Website:</label><br>
+                <input  type="url" 
+                        id="website" 
+                        name="website" 
+                        size="50"
+                        placeholder="https://example.com">
+            </p>
+            
+            <!-- Number Input -->
+            <p>
+                <label for="age">Age:</label><br>
+                <input  type="number" 
+                        id="age" 
+                        name="age" 
+                        min="18" 
+                        max="120">
+            </p>
+            
+            <!-- Date Input -->
+            <p>
+                <label for="birthdate">Birth Date:</label><br>
+                <input type="date" id="birthdate" name="birthdate">
+            </p>
+            
+            <!-- Time Input -->
+            <p>
+                <label for="appointment">Preferred Appointment Time:</label><br>
+                <input type="time" id="appointment" name="appointment">
+            </p>
+            
+            <!-- Color Input -->
+            <p>
+                <label for="favcolor">Favorite Color:</label><br>
+                <input  type="color" 
+                        id="favcolor" 
+                        name="favcolor" 
+                        value="#ff0000">
+            </p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Additional Information</legend>
+            
+            <!-- Radio Buttons -->
+            <p>
+                Gender:<br>
+                <input  type="radio" 
+                        id="male" 
+                        name="gender" 
+                        value="male">
+                <label for="male">Male</label><br>
+                
+                <input  type="radio" 
+                        id="female" 
+                        name="gender" 
+                        value="female">
+                <label for="female">Female</label><br>
+                
+                <input  type="radio" 
+                        id="other" 
+                        name="gender" 
+                        value="other">
+                <label for="other">Other</label><br>
+                
+                <input  type="radio" 
+                        id="prefernot" 
+                        name="gender" 
+                        value="prefernot">
+                <label for="prefernot">Prefer not to say</label>
+            </p>
+            
+            <!-- Checkboxes -->
+            <p>
+                Interests:<br>
+                <input  type="checkbox" 
+                        id="sports" 
+                        name="interests" 
+                        value="sports">
+                <label for="sports">Sports</label><br>
+                
+                <input  type="checkbox" 
+                        id="music" 
+                        name="interests" 
+                        value="music">
+                <label for="music">Music</label><br>
+                
+                <input  type="checkbox" 
+                        id="reading" 
+                        name="interests" 
+                        value="reading">
+                <label for="reading">Reading</label><br>
+                
+                <input  type="checkbox" 
+                        id="travel" 
+                        name="interests" 
+                        value="travel">
+                <label for="travel">Travel</label><br>
+                
+                <input  type="checkbox" 
+                        id="technology" 
+                        name="interests" 
+                        value="technology">
+                <label for="technology">Technology</label>
+            </p>
+            
+            <!-- Select Dropdown -->
+            <p>
+                <label for="country">Country:</label><br>
+                <select id="country" name="country" required>
+                    <option value="">Please select</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="de">Germany</option>
+                    <option value="fr">France</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+            
+            <!-- Multiple Select -->
+            <p>
+                <label for="languages">Languages Spoken:</label><br>
+                <select id="languages" 
+                        name="languages" 
+                        multiple size="3" 
+                        style="width: 100px;">
+                    <option value="english">English</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="french">French</option>
+                    <option value="german">German</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+            
+            <!-- Textarea -->
+            <p>
+                <label for="bio">Biography:</label><br>
+                <textarea   id="bio" 
+                            name="bio" 
+                            rows="4" 
+                            cols="40" 
+                            placeholder="Tell us about yourself..."></textarea>
+            </p>
+            
+            <!-- Range Input -->
+            <p>
+                <label for="satisfaction">Satisfaction Level:</label><br>
+                <input  type="range" 
+                        id="satisfaction" 
+                        name="satisfaction" 
+                        min="1" 
+                        max="11" 
+                        value="6">
+            </p>
+            
+            <!-- File Input -->
+            <p>
+                <label for="photo">Upload Photo:</label><br>
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </p>
+            
+            <!-- Hidden Input -->
+            <input type="hidden" id="userid" name="userid" value="12345">
+            
+            <!-- Search Input -->
+            <p>
+                <label for="search">Search:</label><br>
+                <input  type="search" 
+                        id="search" 
+                        name="search" 
+                        placeholder="Search...">
+            </p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Form Controls</legend>
+            
+            <!-- Submit Button -->
+            <p>
+                <input type="submit" value="Register">
+            </p>
+            
+            <!-- Reset Button -->
+            <p>
+                <input type="reset" value="Clear Form">
+            </p>
+            
+            <!-- Button -->
+            <p>
+                <button type="button">Help</button>
+            </p>
+        </fieldset>
+    </form>
+    
+    <h2>Form Elements Used</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Element</th>
+                <th>Description</th>
+                <th>Attributes Used</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;form&gt;</td>
+                <td>Form container</td>
+                <td>action, method, enctype</td>
+            </tr>
+            <tr>
+                <td>&lt;fieldset&gt;</td>
+                <td>Groups related form controls</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>&lt;legend&gt;</td>
+                <td>Caption for fieldset</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>&lt;label&gt;</td>
+                <td>Label for form controls</td>
+                <td>for</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="text"&gt;</td>
+                <td>Single-line text input</td>
+                <td>id, name, required, maxlength</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="email"&gt;</td>
+                <td>Email address input</td>
+                <td>id, name, required</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="password"&gt;</td>
+                <td>Password input (masked)</td>
+                <td>id, name, required, minlength</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="tel"&gt;</td>
+                <td>Telephone number input</td>
+                <td>id, name, pattern, placeholder</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="url"&gt;</td>
+                <td>URL input</td>
+                <td>id, name, placeholder</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="number"&gt;</td>
+                <td>Numeric input</td>
+                <td>id, name, min, max</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="date"&gt;</td>
+                <td>Date input</td>
+                <td>id, name</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="time"&gt;</td>
+                <td>Time input</td>
+                <td>id, name</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="color"&gt;</td>
+                <td>Color picker</td>
+                <td>id, name, value</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="radio"&gt;</td>
+                <td>Radio button</td>
+                <td>id, name, value</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="checkbox"&gt;</td>
+                <td>Checkbox</td>
+                <td>id, name, value</td>
+            </tr>
+            <tr>
+                <td>&lt;select&gt;</td>
+                <td>Dropdown list</td>
+                <td>id, name, required</td>
+            </tr>
+            <tr>
+                <td>&lt;select multiple&gt;</td>
+                <td>Multiple selection list</td>
+                <td>id, name, multiple, size</td>
+            </tr>
+            <tr>
+                <td>&lt;textarea&gt;</td>
+                <td>Multi-line text input</td>
+                <td>id, name, rows, cols, placeholder</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="range"&gt;</td>
+                <td>Slider control</td>
+                <td>id, name, min, max, value</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="file"&gt;</td>
+                <td>File upload</td>
+                <td>id, name, accept</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="hidden"&gt;</td>
+                <td>Hidden field</td>
+                <td>id, name, value</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="search"&gt;</td>
+                <td>Search field</td>
+                <td>id, name, placeholder</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="submit"&gt;</td>
+                <td>Submit button</td>
+                <td>value</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="reset"&gt;</td>
+                <td>Reset button</td>
+                <td>value</td>
+            </tr>
+            <tr>
+                <td>&lt;button&gt;</td>
+                <td>Button element</td>
+                <td>type</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
