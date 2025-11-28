@@ -14,7 +14,3 @@ This task demonstrates HTML table structure and formatting.
 - Table borders and width attributes
 - Table headers and data organization
 - Row and column spanning (`rowspan`, `colspan`)
-
-## Usage
-
-Open `table_staff.html` in a web browser to view the employee table.
