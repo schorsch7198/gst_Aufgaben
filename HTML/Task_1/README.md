@@ -17,7 +17,3 @@ This task demonstrates fundamental HTML elements and their display on a web page
 - Links and images
 - Tables
 - Basic inline CSS styling
-
-## Usage
-
-Open any `.html` file in a web browser to view the rendered page.

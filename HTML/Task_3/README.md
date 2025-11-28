@@ -21,7 +21,3 @@ This task demonstrates comprehensive HTML form elements and input types.
 - Form validation (required, pattern, min/max)
 - Labels and placeholders
 - Submit and reset buttons
-
-## Usage
-
-Open `formula.html` in a web browser to view and interact with the registration form.
