@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q2 - CSS Positioning</title>
+    <style>
+        /* Container for centering all squares */
+        .container {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            left: 50%;
+            top: 50%;
+            margin-left: -200px;
+            margin-top: -200px;
+        }
+
+        /* Base styling for one square */
+        .square { 
+            position: absolute; 
+            border: 1px solid grey;
+        }
+
+        /* Squares with increasing offsets */
+        .square:nth-child(1) { inset: 0; }      /* :nth-child : pseudo-class selector - first (outermost) square */
+        .square:nth-child(2) { inset: 20px; }   /* inset: shorthand for position offsets (top, right, bottom, and left) */
+        .square:nth-child(3) { inset: 40px; }   
+        .square:nth-child(4) { inset: 60px; }
+        .square:nth-child(5) { inset: 80px; }   
+        
+        .info {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <div class="info">
+        Georg Steiner, 2025-12-03 16:30 (2h), FERTIG
+    </div>
+</body>
+</html>

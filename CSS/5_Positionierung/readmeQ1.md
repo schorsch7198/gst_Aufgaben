@@ -39,8 +39,9 @@ This file demonstrates CSS positioning using a **container element** to create a
         Name, Date/Time, current Status
     </div>
 </body>
+```
 
-🎨 CSS Approach
+**🎨 CSS Approach**
 1. Container Positioning:
 Absolute positioned
 Centered with left: 50%, top: 50%
@@ -52,12 +53,12 @@ Square 2: (220px, 0) - Top-right
 Square 3: (0, 220px) - Bottom-left
 Square 4: (220px, 220px) - Bottom-right
 
-⚙️ Properties Used
+**⚙️ Properties Used**
 Type: Properties
 Required: width, height, position, left, top, background-color, border
 Additional: margin-left, margin-top (for centering)
 
-🌐 Browser Compatibility
+**🌐 Browser Compatibility**
 ✅ Works in all modern browsers: Chrome 60+, Firefox 55+, Safari 10+, Edge 79+
 
 📋 Instructions
